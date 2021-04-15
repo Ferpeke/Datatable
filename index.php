@@ -104,10 +104,12 @@
                 url: "procesos/agregar.php",
                 success: function(r) {
                     if (r == 1) {
+                        
                         $('#frmnuevo')[0].reset();
                         $('#tablaDatatable').load('tabla.php');
                         alertify.success("agregado con exito :D");
                     } else {
+                        console.log(r);
                         alertify.error("Fallo al agregar :(");
                     }
                 }
