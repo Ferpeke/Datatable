@@ -32,12 +32,12 @@
     {
       $obj = new conectar();
       $conexion = $obj->conexion();
-      $sql = "UPDATE t_juegos SET nombre = '$datos[0]',
-                                  anio = '$datos[1]',
-                                  empresa = '$datos[2]'
-      WHERE id_juego = '$datos[3]'"; 
+      $sql="UPDATE t_juegos SET nombre='$datos[0]',
+      anio='$datos[1]',
+      empresa='$datos[2]'
+      WHERE id_juego='$datos[3]'";  
       return mysqli_query($conexion, $sql);
-    }
+    }     
 
     public function eliminar($idjuego)
     {

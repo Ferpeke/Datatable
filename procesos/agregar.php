@@ -9,7 +9,7 @@
 		$_POST['empresa']
 				);
 
-	echo $obj->actualizar($datos);
+	echo $obj->agregar($datos);
 	
 
  ?>
